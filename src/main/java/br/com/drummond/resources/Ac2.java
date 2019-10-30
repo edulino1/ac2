@@ -1,10 +1,12 @@
 package br.com.drummond.resources;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin
 @RestController
 public class Ac2 {
 	@RequestMapping(value = "/multiplo/{valor1}", method = RequestMethod.GET)
